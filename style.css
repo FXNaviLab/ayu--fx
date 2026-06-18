@@ -1,0 +1,293 @@
+/* ====================================
+   鮎の海外FXガイド v3
+==================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+--bg:#0c0c0c;
+--card:#151515;
+--gold:#d9bf73;
+--text:#f5f5f5;
+--border:rgba(217,191,115,.2);
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+line-height:1.8;
+}
+
+a{
+text-decoration:none;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+/* HEADER */
+
+.site-header{
+position:sticky;
+top:0;
+z-index:999;
+background:rgba(12,12,12,.95);
+backdrop-filter:blur(10px);
+border-bottom:1px solid var(--border);
+}
+
+.header-container{
+max-width:1200px;
+margin:auto;
+padding:18px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:var(--gold);
+}
+
+.nav-menu{
+display:flex;
+gap:25px;
+}
+
+.nav-menu a{
+color:white;
+transition:.3s;
+font-size:15px;
+}
+
+.nav-menu a:hover{
+color:var(--gold);
+}
+
+/* HERO */
+
+.hero{
+padding:120px 20px;
+text-align:center;
+background:linear-gradient(
+180deg,
+#3b2b11 0%,
+#0c0c0c 100%
+);
+}
+
+.hero-badge{
+display:inline-block;
+padding:8px 18px;
+border:1px solid var(--gold);
+border-radius:999px;
+color:var(--gold);
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:56px;
+line-height:1.2;
+margin-bottom:25px;
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:18px;
+opacity:.9;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:var(--gold);
+color:#111;
+font-weight:bold;
+border-radius:999px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 0 20px rgba(217,191,115,.3);
+}
+
+/* XS FEATURED */
+
+.featured-broker{
+position:relative;
+max-width:1000px;
+margin:80px auto;
+padding:50px;
+background:var(--card);
+border:1px solid var(--border);
+border-radius:24px;
+overflow:hidden;
+}
+
+.number{
+position:absolute;
+right:20px;
+top:-20px;
+font-size:140px;
+font-weight:bold;
+opacity:.06;
+color:var(--gold);
+}
+
+.featured-broker h2{
+font-size:42px;
+color:var(--gold);
+margin-bottom:15px;
+}
+
+.featured-tag{
+display:inline-block;
+padding:8px 15px;
+border-radius:999px;
+background:rgba(217,191,115,.12);
+color:var(--gold);
+margin-bottom:20px;
+}
+
+/* BROKER GRID */
+
+.other-brokers{
+max-width:1200px;
+margin:auto;
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.broker-card{
+position:relative;
+background:var(--card);
+padding:30px;
+border-radius:20px;
+border:1px solid var(--border);
+transition:.3s;
+overflow:hidden;
+}
+
+.broker-card:hover{
+transform:translateY(-5px);
+border-color:var(--gold);
+}
+
+.broker-number{
+position:absolute;
+top:10px;
+right:15px;
+font-size:70px;
+font-weight:bold;
+opacity:.08;
+color:var(--gold);
+}
+
+.broker-card h3{
+font-size:28px;
+margin-bottom:15px;
+color:var(--gold);
+}
+
+/* FAQ */
+
+.faq{
+max-width:1000px;
+margin:80px auto;
+padding:20px;
+}
+
+.faq h2{
+font-size:40px;
+margin-bottom:30px;
+color:var(--gold);
+}
+
+.faq-item{
+background:var(--card);
+padding:25px;
+margin-bottom:20px;
+border-radius:16px;
+border:1px solid var(--border);
+}
+
+.faq-item h3{
+margin-bottom:10px;
+color:var(--gold);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:80px 20px;
+margin-top:80px;
+border-top:1px solid var(--border);
+color:#999;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.header-container{
+flex-direction:column;
+gap:12px;
+}
+
+.nav-menu{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.featured-broker{
+padding:30px;
+margin:40px 15px;
+}
+
+.featured-broker h2{
+font-size:30px;
+}
+
+.number{
+font-size:90px;
+}
+
+.broker-number{
+font-size:50px;
+}
+
+.faq h2{
+font-size:30px;
+}
+
+}
